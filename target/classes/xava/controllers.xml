@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<controllers xmlns="http://www.openxava.org/xava">
+
+    <!-- Controlador para Producto con acción agregar al carrito -->
+    <controller name="Producto">
+        <action name="Producto.agregarAlCarrito"
+            class="com.tuempresa.facturacion.acciones.AgregarAlCarritoAction"
+            icon="cart-add"
+            inList="true"/>
+    </controller>
+ 	<controller name="Pedido">
+	    <extends controller="Typical"/>
+	    <action name="ConvertirAFactura"
+	        class="com.tuempresa.facturacion.acciones.ConvertirPedidoAFactura"
+	        icon="new" />
+	</controller>
+ 	
+	
+	
+	
+    
+    
+</controllers>
