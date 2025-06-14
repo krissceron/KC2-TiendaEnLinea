@@ -18,7 +18,7 @@ public class Cliente {
  
     @Column(length=50) 
     @Required 
-    String nombre;//KC
+    String nombre;
     
     
     @Embedded // Así para referenciar a una clase incrustable
